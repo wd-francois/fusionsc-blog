@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Layout from '@/components/Layout'
+import Navbar2 from '@/components/Navbar2'
 import { useState } from 'react'
 
 function classNames(...classes) {
@@ -11,7 +12,8 @@ export default function Example() {
 
   return (
     <Layout title= 'Contact Fusion Strength & Conditioning'>
-        <div className=   "bg-gray-200 mt-4 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+     <Navbar2 />
+      <div className=   "bg-gray-200 mt-4 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
         <div className= "relative max-w-xl mx-auto">
         <svg
           className="absolute left-full transform translate-x-1/2"
@@ -178,7 +180,6 @@ export default function Example() {
     </Layout>
   )
 }
-
 
 
 

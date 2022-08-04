@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from './Header'
+import Footer from '@/components/Footer'
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -10,7 +10,6 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name='description' content={description} />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-        <Header />
          <main className='container mx-auto'>{children}</main>
       </div>
     )
@@ -21,3 +20,4 @@ Layout.defaultProps = {
   keywords: 'Fitness, Strength Training, Fatloss, Lean Muscle, Personal Training,',
   description: 'How to get strong, lean, and healthy',
 }
+

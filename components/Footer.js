@@ -1,43 +1,9 @@
+import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import Layout from '@/components/Layout'
-import Navbar2 from '@/components/Navbar2'
 
-export default function Example() {
+export const Footer = () => {
   return (
-    <Layout title='About Fusion Strength & Conditioning'>
-       <Navbar2 />
-       <div className="mt-32">
-       <div className="flex flex-wrap justify-center md:mt-8">
-        <div className="max-w-full h-auto rounded align-middle border-none">
-        <Image src='/images/profile1.jpg' width={600} height={400} alt="personal trainer profile"/>
-          </div>
-          </div>
-               <h5 className='font-bold text-2xl tracking-tight mb-2'>About</h5>
-                <p>Fusion Strength and Conditioning is a fully equipped personal training studio and gym in Melbourne’s North. 
-            As a home fitness studio and gym, clients can train in a comfortable space, without the distractions of a commercial gym.
-            All training programs are individually tailored, with a focus on achieving goals in a safe and supportive environment.</p>
-          
-            <p>Francois Swart is the trainer behind Fusion Strength and Conditioning. Francois is a nationally certified personal trainer
-            through Fitness Australia, with additional qualifications in Exercise Rehabilitation, Strength Training and Nutrition.</p>
-        
-            <p>With more than 15 years of experience, he has worked with a wide range of clients with varying goals and abilities – from athletes
-            who want to improve at their sport, to everyday people who want to lose some weight, build strength or improve their overall health and wellbeing.</p>
-        
-            <p>While much of his career has been spent in commercial gyms, the challenges of 2020 also presented new opportunity. Francois has now started his own
-            personal training studio and gym at his home in Melbourne’s North.</p>
-        
-            <p>
-            Francois is passionate about helping people achieve their goals, and is focused on the individual needs of each client.
-            He believes that everyone is different, so each training program should reflect this. There is no ‘one size fits all’ model.
-            His training programs are built on simple, safe and proven principles, but his methods are always changing and evolving so his clients can progressively,
-            and safely, build toward their ultimate goal. He is committed to supporting his clients outside of their training sessions too, from providing at home programs
-            to advice on healthy eating and nutrition.</p>
-            <p>Get in touch today to start achieving your health and fitness goals!</p>
-       </div>
-    <div>
-    </div>
-       <footer className="bg-white">
+    <footer className="bg-white">
     <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
                  <div className="px-5 py-2"></div>
@@ -75,6 +41,5 @@ export default function Example() {
         </p>
     </div>
   </footer>
-    </Layout>
   )
 }

@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import Layout from '@/components/Layout'
+import Navbar2 from '@/components/Navbar2';
 import Image from 'next/image'
 
 export default function ServicesPage() {
   return (
     
     <Layout title='Services Fusion Strength & Conditioning'>
+      <Navbar2 />
       <section className="mt-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-2">
       <div className="text-center pb-4">
       <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl font-heading">
