@@ -3,15 +3,16 @@ import path from 'path'
 import Layout from '@/components/Layout'
 import Post from '@/components/Post'
 import Pagination from '@/components/Pagination'
-import CategoryList from '@/components/CategoryList'
 import { POSTS_PER_PAGE } from '@/config/index'
 import { getPosts } from '@/lib/posts'
+import Navbar2 from '@/components/Navbar2'
 
 export default function BlogPage({ posts, numPages, currentPage, categories }) {
   return (
     <Layout>
+      <Navbar2 />
       <div className='flex justify-between flex-col md:flex-row'>
-        <div className='w-3/4 mr-10'>
+        <div className='w-full'>
           <h1 className='text-5xl border-b-4 p-5 font-bold'>Blog</h1>
 
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
@@ -22,10 +23,7 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
 
           <Pagination currentPage={currentPage} numPages={numPages} />
         </div>
-
-        <div className='w-1/4'>
-          <CategoryList categories={categories} />
-        </div>
+   
       </div>
     </Layout>
   )

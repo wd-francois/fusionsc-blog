@@ -3,15 +3,15 @@ import path from 'path'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
 import Post from '@/components/Post'
-import CategoryList from '@/components/CategoryList'
 import matter from 'gray-matter'
 import { getPosts } from '@/lib/posts'
+import Navbar2 from '@/components/Navbar2'
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
     <Layout>
-      <div className='flex justify-between'>
-        <div className='w-3/4 mr-10'>
+        <Navbar2 />      <div className='flex justify-between'>
+        <div className='w-full mr-10'>
           <h1 className='text-5xl border-b-4 p-5 font-bold'>
             Posts in {categoryName}
           </h1>
@@ -21,10 +21,6 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
               <Post key={index} post={post} />
             ))}
           </div>
-        </div>
-
-        <div className='w-1/4'>
-          <CategoryList categories={categories} />
         </div>
       </div>
     </Layout>
