@@ -13,7 +13,7 @@ export default function Example() {
   return (
     <Layout title= 'Contact Fusion Strength & Conditioning'>
      <Navbar2 />
-      <div className=   "bg-gray-200 mt-4 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+      <div className="bg-gray-200 mt-4 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
         <div className= "relative max-w-xl mx-auto">
         <svg
           className="absolute left-full transform translate-x-1/2"

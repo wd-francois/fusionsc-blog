@@ -25,9 +25,8 @@ export default function HomePage({ posts }) {
         </a>
       </Link>
             <section className="pt-4 bg-[#F3F4F6]">
-      <h2 className="text-5xl font-bold text-center p-14">Services</h2>
-   <div className="container">
-      <div className="flex flex-wrap -mx-4">
+            <h2 className="text-5xl font-bold text-center p-14">Services</h2>
+         <div className="flex flex-wrap">
          <Link  href='/services'>
          <div className="w-full md:w-1/2 xl:w-1/3 px-4">
             <div className="bg-white rounded-lg overflow-hidden mb-10">
@@ -157,8 +156,7 @@ export default function HomePage({ posts }) {
             </div>
          </div>
          </Link>
-      </div>
-      </div>
+       </div>
       </section>
   <footer className="bg-white">
     <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
